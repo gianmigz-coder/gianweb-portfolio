@@ -1,0 +1,760 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #303030;
+
+    background-color: #8bc5e8;
+
+    background-image:
+        radial-gradient(
+            rgba(255, 255, 255, 0.75) 2px,
+            transparent 2px
+        );
+
+    background-size: 28px 28px;
+}
+
+
+/* HEADER */
+
+.main-header {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 35px auto 25px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #7fbe4f;
+
+    color: white;
+
+    border: 5px solid #303030;
+    border-radius: 28px;
+
+    box-shadow: 10px 10px 0 #303030;
+
+    position: relative;
+}
+
+.small-title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.main-header h1 {
+    font-size: 42px;
+
+    text-shadow: 3px 3px #555;
+}
+
+.subtitle {
+    margin-top: 12px;
+
+    font-weight: bold;
+}
+
+.star {
+    position: absolute;
+
+    color: #ffe34d;
+
+    font-size: 30px;
+}
+
+.star-left {
+    top: 25px;
+    left: 30px;
+}
+
+.star-right {
+    right: 30px;
+    bottom: 25px;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 20px auto 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.navigation a {
+    text-decoration: none;
+
+    color: #303030;
+
+    background: #fffaf0;
+
+    padding: 11px 20px;
+
+    border: 3px solid #303030;
+    border-radius: 12px;
+
+    box-shadow: 4px 4px 0 #303030;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    background: #ffb24b;
+
+    transform: translate(2px, 2px);
+
+    box-shadow: 2px 2px 0 #303030;
+}
+
+
+/* GENERAL CARD */
+
+.card {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 40px;
+
+    background: #fffaf0;
+
+    border: 5px solid #303030;
+    border-radius: 28px;
+
+    box-shadow: 10px 10px 0 #303030;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+}
+
+
+/* HERO SECTION */
+
+.hero-card {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+
+    margin: 20px 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.badge {
+    display: inline-block;
+
+    background: #ffb24b;
+
+    border: 3px solid #303030;
+    border-radius: 20px;
+
+    padding: 10px 18px;
+
+    font-weight: bold;
+
+    box-shadow: 4px 4px 0 #303030;
+}
+
+
+/* EMAIL BOX */
+
+.email-box {
+    display: inline-flex;
+
+    flex-direction: column;
+
+    margin-bottom: 25px;
+
+    padding: 15px 20px;
+
+    background: #ffffff;
+
+    border: 3px solid #303030;
+    border-radius: 15px;
+
+    box-shadow: 4px 4px 0 #303030;
+}
+
+.email-box span {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.email-box a {
+    color: #1565c0;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    word-break: break-word;
+}
+
+.email-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* LOGO */
+
+.logo-container {
+    flex: 1;
+
+    text-align: center;
+}
+
+.main-logo {
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 20px;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* BUTTONS */
+
+.button-group,
+.contact-buttons {
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.green-btn,
+.orange-btn {
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    border: 4px solid #303030;
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 0 #303030;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.green-btn {
+    background: #7fbe4f;
+
+    color: white;
+}
+
+.orange-btn {
+    background: #ffb24b;
+
+    color: #303030;
+}
+
+.green-btn:hover,
+.orange-btn:hover {
+    transform: translate(3px, 3px);
+
+    box-shadow: 2px 2px 0 #303030;
+}
+
+
+/* ABOUT */
+
+.about-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.about-logo-container {
+    flex-shrink: 0;
+}
+
+.about-logo {
+    width: 250px;
+
+    border: 4px solid #303030;
+    border-radius: 20px;
+
+    display: block;
+}
+
+.about-text p {
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* SKILLS */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+}
+
+.skill-box {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #f4f0e6;
+
+    border: 4px solid #303030;
+    border-radius: 20px;
+
+    box-shadow: 6px 6px 0 #303030;
+
+    transition: 0.2s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.skill-box h3 {
+    margin-bottom: 10px;
+}
+
+
+/* PROJECTS */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 30px;
+}
+
+.project-box {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #f4f0e6;
+
+    border: 4px solid #303030;
+    border-radius: 20px;
+
+    box-shadow: 6px 6px 0 #303030;
+}
+
+.project-icon {
+    font-size: 65px;
+
+    margin-bottom: 15px;
+}
+
+.project-box h3 {
+    margin-bottom: 12px;
+}
+
+.project-box p {
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* CONTACT */
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+.contact-info-box {
+    display: inline-block;
+
+    max-width: 100%;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    background: #ffffff;
+
+    border: 4px solid #303030;
+    border-radius: 18px;
+
+    box-shadow: 5px 5px 0 #303030;
+
+    text-align: left;
+}
+
+.contact-info-box a {
+    color: #1565c0;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    word-break: break-word;
+}
+
+.contact-info-box a:hover {
+    text-decoration: underline;
+}
+
+.github-text {
+    margin-top: 20px;
+}
+
+.contact-buttons {
+    justify-content: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+
+    padding: 35px;
+
+    background: #303030;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h2 {
+    color: #7fbe4f;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 35px;
+
+    background: #fffaf0;
+
+    border: 5px solid #303030;
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 0 #303030;
+}
+
+.close-btn {
+    position: absolute;
+
+    top: 8px;
+    right: 15px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+
+/* TODO LIST */
+
+.todo-input-area {
+    display: flex;
+
+    gap: 10px;
+
+    margin: 25px 0;
+}
+
+.todo-input-area input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px;
+
+    border: 3px solid #303030;
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+.todo-input-area button {
+    padding: 10px 18px;
+
+    background: #7fbe4f;
+
+    color: white;
+
+    border: 3px solid #303030;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#todoList {
+    list-style: none;
+}
+
+#todoList li {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background: #eeeeee;
+
+    border: 2px solid #303030;
+    border-radius: 8px;
+}
+
+#todoList button {
+    background: #ff6b6b;
+
+    border: 2px solid #303030;
+    border-radius: 6px;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+
+
+/* CALCULATOR */
+
+#calculatorDisplay {
+    width: 100%;
+
+    padding: 18px;
+
+    margin: 20px 0;
+
+    border: 4px solid #303030;
+    border-radius: 10px;
+
+    font-size: 22px;
+
+    text-align: right;
+}
+
+.calculator-buttons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.calculator-buttons button {
+    padding: 18px;
+
+    background: #7fbe4f;
+
+    color: white;
+
+    border: 3px solid #303030;
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.calculator-buttons button:hover {
+    background: #ffb24b;
+
+    color: #303030;
+}
+
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+
+    .main-header {
+        padding: 30px 20px;
+    }
+
+    .main-header h1 {
+        font-size: 30px;
+    }
+
+    .small-title {
+        font-size: 10px;
+    }
+
+    .star {
+        display: none;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .hero-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    .email-box {
+        text-align: left;
+    }
+
+    .about-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .about-logo {
+        width: 200px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .todo-input-area {
+        flex-direction: column;
+    }
+
+}
